@@ -1,2 +1,2 @@
 # design-pattern
-the nodes of design patterns
+the nodes of Head First Design Patterns
