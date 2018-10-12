@@ -8,6 +8,9 @@ package com.cc.observer.service;
 public interface Observer {
 	/**
 	 * 收到通知后更新信息
+	 * @param temperature
+	 * @param humidity
+	 * @param pressure
 	 */
-	public void update();
+	public void update(float temperature, float humidity, float pressure);
 }
