@@ -7,7 +7,7 @@ import com.cc.observer.service.impl.ForecastDisplay;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/12 17:15
- * @Description ObserverTest 观察者模式测试程序
+ * @Description 在对象之间定义一对多的依赖，当一个对象改变状态，依赖它的对象都会收到通知，并自动完成更新操作
  */
 public class ObserverTest {
 	public static void main(String[] args) {
