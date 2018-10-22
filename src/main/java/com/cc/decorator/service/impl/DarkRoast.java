@@ -1,6 +1,6 @@
-package com.cc.decorador.service.impl;
+package com.cc.decorator.service.impl;
 
-import com.cc.decorador.service.Beverage;
+import com.cc.decorator.service.Beverage;
 
 /**
  * @author chencheng0816@gmail.com

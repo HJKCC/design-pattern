@@ -1,4 +1,4 @@
-package com.cc.decorador.service;
+package com.cc.decorator.service;
 
 /**
  * @author chencheng0816@gmail.com
