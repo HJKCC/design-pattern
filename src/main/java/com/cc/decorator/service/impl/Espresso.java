@@ -1,0 +1,20 @@
+package com.cc.decorador.service.impl;
+
+import com.cc.decorador.service.Beverage;
+
+/**
+ * @author chencheng0816@gmail.com
+ * @date 2018/10/22 20:36
+ * @Description DarkRoast
+ */
+public class Espresso extends Beverage {
+	public Espresso() {
+		super();
+		super.setDescription("Espresso");
+	}
+
+	@Override
+	public double cost() {
+		return 0.99;
+	}
+}
