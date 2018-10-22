@@ -6,7 +6,7 @@ import com.cc.decorator.service.CondimentDscorator;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/22 20:59
- * @Description Milk
+ * @Description Soy 豆子
  */
 public class Soy extends CondimentDscorator {
 	private Beverage beverage;
