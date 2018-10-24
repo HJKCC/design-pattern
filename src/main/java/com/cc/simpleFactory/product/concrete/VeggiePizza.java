@@ -5,7 +5,7 @@ import com.cc.simpleFactory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 18:38
- * @Description VeggiePizza
+ * @Description ChicagoStyleVeggiePizza
  */
 public class VeggiePizza extends Pizza {
 	public VeggiePizza() {

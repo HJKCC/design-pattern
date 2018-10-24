@@ -5,11 +5,11 @@ import com.cc.factory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 18:38
- * @Description PepperoniPizza
+ * @Description ChicagoStyleVeggiePizza
  */
-public class PepperoniPizza extends Pizza {
-	public PepperoniPizza() {
+public class NYStyleVeggiePizza extends Pizza {
+	public NYStyleVeggiePizza() {
 		super();
-		setType("CheesePizza");
+		setName("NY Style Veggie Pizza");
 	}
 }

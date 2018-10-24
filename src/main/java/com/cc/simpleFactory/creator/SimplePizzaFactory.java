@@ -9,7 +9,7 @@ import com.cc.simpleFactory.product.concrete.VeggiePizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 20:21
- * @Description SimpleFactory
+ * @Description SimplePizzaFactory
  */
 public class SimplePizzaFactory {
 	public Pizza createPizza(String type) {

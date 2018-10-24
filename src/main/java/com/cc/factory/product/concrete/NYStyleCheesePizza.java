@@ -5,11 +5,11 @@ import com.cc.factory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 18:38
- * @Description ClamPizza
+ * @Description ChicagoStyleCheesePizza
  */
-public class ClamPizza extends Pizza {
-	public ClamPizza() {
+public class NYStyleCheesePizza extends Pizza {
+	public NYStyleCheesePizza() {
 		super();
-		setType("CheesePizza");
+		setName("NY Style Cheese Pizza");
 	}
 }
