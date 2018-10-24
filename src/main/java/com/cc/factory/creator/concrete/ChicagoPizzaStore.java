@@ -1,8 +1,8 @@
 package com.cc.factory.creator.concrete;
 
 import com.cc.factory.creator.PizzaStore;
+import com.cc.factory.product.Pizza;
 import com.cc.factory.product.concrete.*;
-import com.cc.simpleFactory.product.Pizza;
 
 /**
  * @author chencheng0816@gmail.com
@@ -10,8 +10,8 @@ import com.cc.simpleFactory.product.Pizza;
  * @Description ChicagoPizzaStore 芝加哥口味披萨店
  */
 public class ChicagoPizzaStore extends PizzaStore {
-	public com.cc.factory.product.Pizza createPizza(String type) {
-		com.cc.factory.product.Pizza pizza = null;
+	public Pizza createPizza(String type) {
+		Pizza pizza = null;
 		if (type.equals("CheesePizza")) {
 			pizza = new ChicagoStyleCheesePizza();
 		} else if (type.equals("ClamPizza")) {
