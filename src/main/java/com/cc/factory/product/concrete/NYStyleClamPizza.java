@@ -5,7 +5,7 @@ import com.cc.factory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 18:38
- * @Description ChicagoStyleClamPizza
+ * @Description ChicagoStyleClamPizza 纽约式豆豉披萨
  */
 public class NYStyleClamPizza extends Pizza {
 	public NYStyleClamPizza() {

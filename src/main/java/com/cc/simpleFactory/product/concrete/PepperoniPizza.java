@@ -5,7 +5,7 @@ import com.cc.simpleFactory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 18:38
- * @Description ChicagoStylePepperoniPizza
+ * @Description PepperoniPizza 香肠
  */
 public class PepperoniPizza extends Pizza {
 	public PepperoniPizza() {

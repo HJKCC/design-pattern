@@ -7,7 +7,7 @@ import com.cc.simpleFactory.product.Pizza;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/23 21:45
- * @Description PizzaStoreImpl
+ * @Description ChicagoPizzaStore 芝加哥口味披萨店
  */
 public class ChicagoPizzaStore extends PizzaStore {
 	public com.cc.factory.product.Pizza createPizza(String type) {
