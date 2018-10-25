@@ -1,5 +1,5 @@
 # design-pattern
-the nodes of Head First Design Patterns
+the UML diagrams and source code of Head First Design Patterns
 
 # 设计模式
 - 策略模式：定义了一系列算法族(如FlyBehavior、QuackBehavior)，分别将其封装起来，让它们之间可以相互替换。让算法的变化独立于使用算法的客户。
@@ -8,10 +8,10 @@ the nodes of Head First Design Patterns
 - 工厂模式【4个角色：抽象工厂Creator、具体工厂Concrete Creator、抽象产品Product、具体产品Concrete Product】
 1. 简单工厂：通过工厂类实现创建工厂的细节。其实不是一个设计模式。
 2. 工厂方法模式：定义一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。
-2. 抽象工厂模式：提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。通过工厂方法实现。如spring IOC中的bean工厂（抽象工厂模式）。
+2. 抽象工厂模式：提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。生产方法通过工厂方法实现。如spring IOC中的bean工厂（抽象工厂模式）。
+- 单例模式：确保一个类只有一个实例，并提供一个全局访问入口。如数据库连接池、注册表设置对象。
 - 动态代理：如日志、事务处理等。
-- 单例模式
-- 多例模式：如数据库连接池。
+- 多例模式：如数据库连接池中的数据库连接。
 - 责任链模式：如tomcat的过滤器Filter 和 struts的intercepter。
 - 桥接模式：
 - 适配器模式：如java.io中的inputStreamReader。
