@@ -16,7 +16,8 @@ import java.util.List;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/26 10:58
- * @Description CommandTest
+ * @Description 命令模式：将一个命令封装成一个对象，从而可以根据不同的请求（如队列、日志请求）对调用者进行参数化，也可实现误操作撤销和宕机恢复功能。
+ * 包含以下三个组成部分：invoker、command 和concrete command、recerver
  */
 public class CommandTest {
 	public static void main(String[] args) {
