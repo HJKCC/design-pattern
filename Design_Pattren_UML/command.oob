@@ -1397,7 +1397,7 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o6">
 <a:CreationDate>1540519253</a:CreationDate>
 <a:ModificationDate>1540521983</a:ModificationDate>
-<a:Rect>((-3581,16186), (-2581,27554))</a:Rect>
+<a:Rect>((-3381,16186), (-2781,27554))</a:Rect>
 <a:ListOfPoints>((-3081,27554),(-3081,16186))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1502,7 +1502,7 @@ MULA 0 新宋体,8,N</a:FontList>
 <o:AssociationSymbol Id="o22">
 <a:CreationDate>1540521431</a:CreationDate>
 <a:ModificationDate>1540521431</a:ModificationDate>
-<a:Rect>((-22184,1478), (-21184,10819))</a:Rect>
+<a:Rect>((-21984,1478), (-21384,10819))</a:Rect>
 <a:ListOfPoints>((-21684,10819),(-21684,1478))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
