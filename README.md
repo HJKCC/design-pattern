@@ -11,6 +11,10 @@ the UML diagrams and source code of Head First Design Patterns
 2. 抽象工厂模式：提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。生产方法通过工厂方法实现。如spring IOC中的bean工厂（抽象工厂模式）。
 - 单例模式：确保一个类只有一个实例，并提供一个全局访问入口。如数据库连接池、注册表设置对象。
 - 命令模式：将一个命令封装成一个对象，从而可以根据不同的请求（如队列、日志请求）对调用者进行参数化，也可实现误操作撤销和宕机恢复功能。应用于日志和事务系统。【三个组成部分：invoker、command 和concrete command、recerver】
+- 适配器模式：将一个类的接口转换为客户期望的另一个接口，解耦客户与被适配者。【客户Client、客户接口Target、适配器Adapter、被适配者Adaptee】
+1. 对象适配器：利用组合的方式将请求传送给被适配者。
+2. 类适配器：通过Adapter 多重继承Target 和Adaptee 实现适配。Java语法不支持。
+- 外观模式：即门面模式，提供一个统一的接口来处理子系统中的一群接口。如MVC 中的service层
 - 动态代理：如日志、事务处理等。
 - 多例模式：如数据库连接池中的数据库连接。
 - 责任链模式：如tomcat的过滤器Filter 和 struts的intercepter。
@@ -23,3 +27,4 @@ the UML diagrams and source code of Head First Design Patterns
 - 对象之间松耦合
 - 开放-关闭原则：类应该对拓展开放，对修改关闭
 - 依赖倒置原则：要依赖抽象，不要依赖具体类
+- 最少知识原则：最大限度减少依赖类数目
