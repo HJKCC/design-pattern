@@ -6,4 +6,11 @@ package com.cc.template;
  * @Description TemplateTest
  */
 public class TemplateTest {
+	public static void main(String[] args) {
+		AbstractClass abstractClass = new ConcreteClass1(true);
+		abstractClass.templateMethod();
+
+		abstractClass = new ConcreteClass2(false);
+		abstractClass.templateMethod();
+	}
 }
