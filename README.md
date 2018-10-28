@@ -14,7 +14,8 @@ the UML diagrams and source code of Head First Design Patterns
 - 适配器模式：将一个类的接口转换为客户期望的另一个接口，解耦客户与被适配者。【客户目标接口Target、适配器Adapter、被适配者Adaptee】
 1. 对象适配器：利用组合的方式将请求传送给被适配者。
 2. 类适配器：通过Adapter 多重继承Target 和Adaptee 实现适配。Java语法不支持。
-- 外观模式：即门面模式，提供一个统一的接口来处理子系统中的一群接口。如MVC 中的service层
+- 外观模式：即门面模式，提供一个统一的接口来处理子系统中的一群接口，与适配器类似。如MVC 中的service层
+- 模板方法模式：在一个模板方法定义一系列的算法步骤（包括具体方法、抽象方法、钩子）。可以使得在不改变算法结构的情况下，重新定义算法中的某些步骤。如集合的sort()
 - 动态代理：如日志、事务处理等。
 - 多例模式：如数据库连接池中的数据库连接。
 - 责任链模式：如tomcat的过滤器Filter 和 struts的intercepter。
@@ -28,3 +29,4 @@ the UML diagrams and source code of Head First Design Patterns
 - 开放-关闭原则：类应该对拓展开放，对修改关闭
 - 依赖倒置原则：要依赖抽象，不要依赖具体类
 - 最少知识原则：最大限度减少依赖类数目
+- 好莱坞原则：高层组件决定什么时候调用低层组件
