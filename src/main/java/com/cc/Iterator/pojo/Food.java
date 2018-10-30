@@ -6,4 +6,28 @@ package com.cc.Iterator.pojo;
  * @Description Food
  */
 public class Food {
+	private String name;
+	private Double price;
+	private boolean vegetarian;
+
+	public Food(String name, Double price, boolean vegetarian) {
+		this.name = name;
+		this.price = price;
+		this.vegetarian = vegetarian;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public boolean isVegetarian() {
+		return vegetarian;
+	}
+
+	@Override
+	public String toString() {
+		return "name='" + name + '\'' +
+				", price=" + price +
+				", vegetarian=" + vegetarian;
+	}
 }

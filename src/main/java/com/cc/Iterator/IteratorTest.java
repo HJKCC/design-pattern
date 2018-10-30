@@ -1,5 +1,12 @@
 package com.cc.Iterator;
 
+import com.cc.Iterator.aggregate.MenuInterface;
+import com.cc.Iterator.aggregate.concrete.BreakfastMenu;
+import com.cc.Iterator.aggregate.concrete.DinnerMenu;
+import com.cc.Iterator.aggregate.concrete.LunchMenu;
+import com.cc.Iterator.pojo.Food;
+import com.cc.Iterator.pojo.Waiter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,5 +16,26 @@ import java.util.List;
  * @Description IteratorTest
  */
 public class IteratorTest {
-	List<String> aa = new ArrayList<String>();
+	public static void main(String[] args) {
+		BreakfastMenu breakfastMenu = new BreakfastMenu();
+		LunchMenu lunchMenu = new LunchMenu();
+		DinnerMenu dinnerMenu = new DinnerMenu();
+
+		breakfastMenu.addFood(new Food("egg", 0.4, false));
+		breakfastMenu.addFood(new Food("corn", 0.2, true));
+
+		lunchMenu.addFood(new Food("nbs", 12.0, false));
+		lunchMenu.addFood(new Food("beef", 15.0, false));
+
+		dinnerMenu.addFood(new Food("noodles", 5.0, true));
+		dinnerMenu.addFood(new Food("kfc", 8.5, false));
+
+		List menus = new ArrayList<MenuInterface>();
+		menus.add(breakfastMenu);
+		menus.add(lunchMenu);
+		menus.add(dinnerMenu);
+		Waiter waiter = new Waiter(menus);
+		waiter.printMenu();
+	}
+
 }

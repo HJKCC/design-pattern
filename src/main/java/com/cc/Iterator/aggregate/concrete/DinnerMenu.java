@@ -3,26 +3,36 @@ package com.cc.Iterator.aggregate.concrete;
 import com.cc.Iterator.aggregate.MenuInterface;
 import com.cc.Iterator.pojo.Food;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/10/30 14:32
- * @Description BreakfastMenu
+ * @Description DinnerMenu
  */
-public class BreakfastMenu implements MenuInterface {
-	private List foods;
+public class DinnerMenu implements MenuInterface {
+	private Map foods;
 
-	public BreakfastMenu(List foods) {
+	public DinnerMenu() {
+		this.foods = new HashMap<String, Food>();
+	}
+
+	public DinnerMenu(Map foods) {
+		this.foods = foods;
+	}
+
+	public void setFoods(Map foods) {
 		this.foods = foods;
 	}
 
 	public void addFood(Food food) {
-		foods.add(food);
+		foods.put(food.getName(), food);
 	}
 
 	public Iterator createIterator() {
-		return foods.iterator();
+		return foods.values().iterator();
 	}
 }
