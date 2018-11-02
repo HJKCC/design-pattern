@@ -1,6 +1,5 @@
-package com.cc.proxy.remoteProxy;
+package com.cc.proxy.remoteProxy.server;
 
-import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -8,7 +7,7 @@ import java.rmi.registry.Registry;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/11/2 10:19
- * @Description Server 远程服务
+ * @Description Server 远程服务程序，
  */
 public class Server {
 	public static void main(String[] args) {

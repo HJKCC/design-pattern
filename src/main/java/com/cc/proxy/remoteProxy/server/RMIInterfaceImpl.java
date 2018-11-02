@@ -1,4 +1,4 @@
-package com.cc.proxy.remoteProxy;
+package com.cc.proxy.remoteProxy.server;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -9,14 +9,16 @@ import java.rmi.server.UnicastRemoteObject;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/11/2 10:19
- * @Description RMIInterfaceImpl
+ * @Description RMIInterfaceImpl 远程接口实现类
+ * 为了实现远程服务对象的功能，继承UnicastRemoteObject
  */
 public class RMIInterfaceImpl extends UnicastRemoteObject implements RMIInterface {
 	public RMIInterfaceImpl() throws RemoteException {
 	}
 
-	public void helloRMI() throws RemoteException {
-		System.out.println("hello RMI");
+	public String helloRMI(User user) throws RemoteException {
+		System.out.println(user);
+		return user.getName();
 	}
 
 	public void exit(String name) throws RemoteException {
