@@ -7,6 +7,8 @@ package com.cc.proxy.virtualProxy;
  */
 public class VirtualTest {
 	public static void main(String[] args) {
-		System.out.println("VirtualTest");
+		SubjectInterface subjectInterface = new ProxySubject();
+		subjectInterface.print();
+		System.out.println("The main method is over!");
 	}
 }
