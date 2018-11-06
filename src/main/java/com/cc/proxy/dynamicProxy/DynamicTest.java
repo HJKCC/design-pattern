@@ -6,4 +6,10 @@ package com.cc.proxy.dynamicProxy;
  * @Description DynamicTest 动态代理
  */
 public class DynamicTest {
+	public static void main(String[] args) {
+		RealSubject realSubject = new RealSubject("test", "test");
+		SubjectInterface proxySubject = GetterInvocationHandler.getProxy(realSubject);
+		System.out.println("getDescription() --- " + proxySubject.getDescription());
+		proxySubject.setDescription("test set");
+	}
 }
