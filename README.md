@@ -24,6 +24,9 @@ the UML diagrams and source code of Head First Design Patterns
 1. 远程代理：调用本地堆中代理对象的方法，会通过网络通信（如rmi、rpc）交由不同JVM 堆中的远程对象处理。
 2. 虚拟代理：开销大的对象在创建前和创建中，由虚拟代理暂代。对象创建完后，代理就会将请求直接委托给对象。如图片加载过程。
 3. 保护代理：基于调用者控制对对象方法的访问。如权限处理、spring aop等。
+- 复合模式：结合两个及以上的模式，组成一个解决方案， 解决一再发生的一般性问题。如MVC、Model 2 模式。
+1. MVC：模型使用观察者模式，控制器是视图的策略，视图使用组合模式实现界面。另外，也可通过适配器模式将新模型适配为旧模型，重用已有的视图和控制器。
+2. Model 2：是MVC 在Web 上的应用。Servlet 充当控制器， JSP/HTML 充当视图。
 - 责任链模式：如tomcat的过滤器Filter 和 struts的intercepter。
 
 # 设计原则
