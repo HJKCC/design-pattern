@@ -1,9 +1,8 @@
 package com.cc.observer.service.impl;
 
-import com.cc.observer.pojo.WeatherData;
 import com.cc.observer.service.DisplayDevice;
 import com.cc.observer.service.Observer;
-import com.cc.observer.service.Subject;
+import com.cc.observer.pojo.Subject;
 
 /**
  * @author chencheng0816@gmail.com

@@ -1,20 +1,20 @@
 package com.cc.mvc.controller;
 
+import com.cc.mvc.model.Subject;
+
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/11/8 10:16
- * @Description QuickController
+ * @Description QuickIncreaseController 飞快增速
  */
-public class QuickController implements ControllerInterface {
-	public void modifyName(String name) {
-		System.out.println("QuickController modify: " + name);
+public class QuickIncreaseController implements ControllerInterface {
+	private Subject subject;
+
+	public QuickIncreaseController(Subject subject) {
+		this.subject = subject;
 	}
 
-	public void increase() {
-
-	}
-
-	public void decrease() {
-
+	public void count() {
+		subject.add(2);
 	}
 }

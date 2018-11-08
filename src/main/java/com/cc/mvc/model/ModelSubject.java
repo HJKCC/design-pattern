@@ -8,33 +8,33 @@ import java.util.List;
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/11/8 16:02
- * @Description Model 被观察者1
+ * @Description ModelSubject 被观察者
  */
-public class Model implements Subject {
+public class ModelSubject implements Subject {
 	private final int MIN_SPEED = 0;
 	private final int MAX_SPEED = 20;
 	private int speed;
 	private List<ViewComponent> viewComponentList;
 
-	public Model(int speed, List<ViewComponent> viewComponentList) {
+	public ModelSubject(int speed, List<ViewComponent> viewComponentList) {
 		this.speed = speed;
 		this.viewComponentList = viewComponentList;
 	}
 
-	public int add(int step) {
+	public void add(int step) {
 		speed += step;
 		if (speed >= MAX_SPEED) {
 			speed = MAX_SPEED;
 		}
-		return speed;
+		noticeObservers();
 	}
 
-	public int sub(int step) {
+	public void sub(int step) {
 		speed -= step;
 		if (speed <= MIN_SPEED) {
 			speed = MIN_SPEED;
 		}
-		return speed;
+		noticeObservers();
 	}
 
 	public void registerObserver(ViewComponent observer) {
@@ -49,7 +49,7 @@ public class Model implements Subject {
 		Iterator iterator = viewComponentList.iterator();
 		while(iterator.hasNext()) {
 			ViewComponent viewComponent = (ViewComponent) iterator.next();
-			viewComponent.update(viewComponent);
+			viewComponent.update(viewComponent, speed);
 		}
 	}
 }

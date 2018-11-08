@@ -1,7 +1,6 @@
 package com.cc.observer.pojo;
 
 import com.cc.observer.service.Observer;
-import com.cc.observer.service.Subject;
 
 import java.util.ArrayList;
 import java.util.List;

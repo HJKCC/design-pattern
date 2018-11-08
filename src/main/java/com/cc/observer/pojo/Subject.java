@@ -1,4 +1,6 @@
-package com.cc.observer.service;
+package com.cc.observer.pojo;
+
+import com.cc.observer.service.Observer;
 
 /**
  * @author chencheng0816@gmail.com

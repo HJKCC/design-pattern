@@ -1,20 +1,20 @@
 package com.cc.mvc.controller;
 
+import com.cc.mvc.model.Subject;
+
 /**
  * @author chencheng0816@gmail.com
  * @date 2018/11/8 10:16
- * @Description SlowController 小运算
+ * @Description SlowIncreaseController 缓慢增速
  */
-public class SlowController implements ControllerInterface {
-	public void modifyName(String name) {
-		System.out.println("SlowController modify: " + name);
+public class SlowIncreaseController implements ControllerInterface {
+	private Subject subject;
+
+	public SlowIncreaseController(Subject subject) {
+		this.subject = subject;
 	}
 
-	public void increase() {
-
-	}
-
-	public void decrease() {
-
+	public void count() {
+		subject.add(1);
 	}
 }
