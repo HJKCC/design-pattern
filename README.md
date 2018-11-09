@@ -27,7 +27,8 @@ the UML diagrams and source code of Head First Design Patterns
 - 复合模式：结合两个及以上的模式，组成一个解决方案， 解决一再发生的一般性问题。如MVC、Model 2 模式。
 1. MVC：模型使用观察者模式，控制器是视图的策略，视图使用组合模式实现界面。另外，也可通过适配器模式将新模型适配为旧模型，重用已有的视图和控制器。
 2. Model 2：是MVC 在Web 上的应用。Servlet 充当控制器， JSP/HTML 充当视图。
-- 责任链模式：如tomcat的过滤器Filter 和 struts的intercepter。
+- 桥接模式: 将抽象部分与它的实现部分分离开来，使他们都可以独立改变。【抽象类Abstraction、扩充抽象类RefinedAbstraction、实现类接口Implementor、具体实现类ConcreteImplementor】
+- 责任链模式：为请求创建了一个接收者的对象链，每个接收者都包含对另一个接收者的引用。每个对象依次检查此请求，并对其进行处理，或将其传给链中的下一个对象。如tomcat的过滤器Filter 和 struts的intercepter。
 
 # 设计原则
 - 多用组合，少用继承
