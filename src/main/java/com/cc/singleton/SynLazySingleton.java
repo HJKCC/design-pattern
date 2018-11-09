@@ -1,4 +1,4 @@
-package com.cc.Singleton;
+package com.cc.singleton;
 
 /**
  * @author chencheng0816@gmail.com
