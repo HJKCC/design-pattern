@@ -1,6 +1,6 @@
-package com.cc.Iterator.pojo;
+package com.cc.iterator.pojo;
 
-import com.cc.Iterator.aggregate.MenuInterface;
+import com.cc.iterator.aggregate.MenuInterface;
 
 import java.util.Iterator;
 import java.util.List;

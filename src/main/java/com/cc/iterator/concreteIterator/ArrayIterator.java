@@ -1,4 +1,4 @@
-package com.cc.Iterator.concreteIterator;
+package com.cc.iterator.concreteIterator;
 
 import java.util.Iterator;
 

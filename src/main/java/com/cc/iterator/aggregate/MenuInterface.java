@@ -1,6 +1,6 @@
-package com.cc.Iterator.aggregate;
+package com.cc.iterator.aggregate;
 
-import com.cc.Iterator.pojo.Food;
+import com.cc.iterator.pojo.Food;
 
 import java.util.Iterator;
 

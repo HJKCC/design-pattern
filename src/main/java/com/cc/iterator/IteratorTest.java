@@ -1,11 +1,11 @@
-package com.cc.Iterator;
+package com.cc.iterator;
 
-import com.cc.Iterator.aggregate.MenuInterface;
-import com.cc.Iterator.aggregate.concrete.BreakfastMenu;
-import com.cc.Iterator.aggregate.concrete.DinnerMenu;
-import com.cc.Iterator.aggregate.concrete.LunchMenu;
-import com.cc.Iterator.pojo.Food;
-import com.cc.Iterator.pojo.Waiter;
+import com.cc.iterator.aggregate.MenuInterface;
+import com.cc.iterator.aggregate.concrete.BreakfastMenu;
+import com.cc.iterator.aggregate.concrete.DinnerMenu;
+import com.cc.iterator.aggregate.concrete.LunchMenu;
+import com.cc.iterator.pojo.Food;
+import com.cc.iterator.pojo.Waiter;
 
 import java.util.ArrayList;
 import java.util.List;

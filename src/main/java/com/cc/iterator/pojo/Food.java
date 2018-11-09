@@ -1,4 +1,4 @@
-package com.cc.Iterator.pojo;
+package com.cc.iterator.pojo;
 
 /**
  * @author chencheng0816@gmail.com

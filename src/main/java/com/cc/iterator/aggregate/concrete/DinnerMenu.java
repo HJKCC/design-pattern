@@ -1,11 +1,10 @@
-package com.cc.Iterator.aggregate.concrete;
+package com.cc.iterator.aggregate.concrete;
 
-import com.cc.Iterator.aggregate.MenuInterface;
-import com.cc.Iterator.pojo.Food;
+import com.cc.iterator.aggregate.MenuInterface;
+import com.cc.iterator.pojo.Food;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 /**
