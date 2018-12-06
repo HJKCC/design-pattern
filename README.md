@@ -3,8 +3,8 @@ the UML diagrams and source code of Head First Design Patterns
 
 # 设计模式
 - 策略模式(strategy pattern)：定义了一系列算法族(如FlyBehavior、QuackBehavior)，分别将其封装起来，让它们之间可以相互替换。让算法的变化独立于使用算法的客户。
-- 观察者模式(observer pattern)：在对象之间定义一对多的依赖，当一个对象改变状态，依赖它的对象都会收到通知，并自动完成更新操作。如Jbutton按钮。
-- 装饰者模式(decorator pattern)：动态地将责任附加到对象上。若要拓展功能，装饰者提供了比继承更具有弹性的替代方案。它在被装饰者的行为之前或之后，加上自己的行为，以达到特定的目的。如java.io中InputStream（抽象组件）、FileInputStream（抽象装饰者）和BufferedInputStream（具体装饰者）。
+- 观察者模式(observer pattern)：在对象之间定义一对多的依赖，当一个对象改变状态，依赖它的对象都会收到通知，并自动完成更新操作。如Jbutton按钮。【抽象主体subject、具体主体concreteSubject、抽象观察者observer、具体观察者concreteObserver】
+- 装饰者模式(decorator pattern)：动态地将责任附加到对象上。若要拓展功能，装饰者提供了比继承更具有弹性的替代方案。它在被装饰者的行为之前或之后，加上自己的行为，以达到特定的目的。如java.io中InputStream（抽象组件）、FileInputStream（抽象装饰者）和BufferedInputStream（具体装饰者）。【抽象组件component、具体组件concreteComponent、装饰者接口decorator、具体装饰者concreteDocoretor】
 - 工厂模式【4个角色：抽象工厂Creator、具体工厂Concrete Creator、抽象产品Product、具体产品Concrete Product】
 1. 简单工厂(simple factory pattern)：通过工厂类实现创建工厂的细节。其实不是一个设计模式。
 2. 工厂方法模式(factory pattern)：定义一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。
@@ -17,8 +17,8 @@ the UML diagrams and source code of Head First Design Patterns
 2. 类适配器：通过Adapter 多重继承Target 和Adaptee 实现适配。Java语法不支持。
 - 外观模式(facade pattern)：即门面模式，提供一个统一的接口来处理子系统中的一群接口，与适配器类似。如MVC 中的service层。
 - 模板方法模式(template pattern)：在一个模板方法定义一系列的算法步骤（包括具体方法、抽象方法、钩子）。可以使得在不改变算法结构的情况下，重新定义算法中的某些步骤。如集合的sort()
-- 迭代器模式(iterator pattern)：提供一种方法按顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。
-- 组合模式:(composite pattern) 允许将对象组合成树形结构以表示“部分-整体”的层次结构，使得用户对单个对象和组合对象的使用具有一致性，一视同仁。【组件component、组合composite、叶节点leaf】
+- 迭代器模式(iterator pattern)：提供一种方法按顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。如Collection接口【聚合接口aggregate、具体聚合concreteAggregate、迭代器接口Iterator、具体迭代器concreteIterator】
+- 组合模式:(composite pattern) 允许将对象组合成树形结构以表示“部分-整体”的层次结构，使得用户对单个对象和组合对象的使用具有一致性，一视同仁。【组件接口component、组合composite、叶节点leaf】
 - 状态模式(state pattern)：允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类。【状态集合类Context、State接口、具体状态ConcreteState】
 - 动态代理(proxy pattern)：为另一个对象提供一个替身或占位符以访问这个对象。如日志、事务处理等。
 1. 远程代理：调用本地堆中代理对象的方法，会通过网络通信（如rmi、rpc）交由不同JVM 堆中的远程对象处理。
