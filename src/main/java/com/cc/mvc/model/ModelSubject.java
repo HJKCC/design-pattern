@@ -14,7 +14,7 @@ public class ModelSubject implements Subject {
 	private final int MIN_SPEED = 0;
 	private final int MAX_SPEED = 20;
 	private int speed;
-	private List<ViewComponent> viewComponentList;
+	private List<ViewComponent> viewComponentList;  // 观察者集合
 
 	public ModelSubject(int speed, List<ViewComponent> viewComponentList) {
 		this.speed = speed;
